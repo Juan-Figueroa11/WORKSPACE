@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #006d77;
+}
+
+.calendario {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloque {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  padding: 10px 15px;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  border-left: 6px solid #006d77;
+}
+
+/* Momentos del día */
+.mañana {
+  background-color: #d0f4ff; /* azul claro */
+}
+
+.tarde {
+  background-color: #fff9c4; /* amarillo claro */
+}
+
+.noche {
+  background-color: #e0e0e0; /* gris claro */
+}
+
+.hora {
+  font-weight: bold;
+  color: #023047;
+}
+
+.actividad {
+  color: #333;
+}
+
+/* Estilo para impresión */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .bloque {
+    box-shadow: none;
+    border-left: 4px solid #000;
+    page-break-inside: avoid;
+  }
+
+  .mañana {
+    background: #d0f4ff;
+  }
+
+  .tarde {
+    background: #fff9c4;
+  }
+
+  .noche {
+    background: #f0f0f0;
+  }
+}
+
+

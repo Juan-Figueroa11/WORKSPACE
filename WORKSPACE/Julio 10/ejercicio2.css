@@ -1,0 +1,27 @@
+.body {
+    font-family:monospace;
+    background-color: chocolate;
+}
+.contacto {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #d42020;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+    background-color: #e7d04e;
+    box-sizing: border-box;
+}
+
+div .nombre {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.nombre{
+    font-weight: bolder;
+    font-size:xx-large;
+    color: rgb(98, 10, 156);
+}
